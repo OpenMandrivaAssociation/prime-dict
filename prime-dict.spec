@@ -9,7 +9,6 @@ URL:			http://sourceforge.jp/projects/prime/
 License:		GPL
 Group:		System/Internationalization
 Source0:		%{name}-%{version}.tar.bz2
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 Dictionaries for PRIME.
