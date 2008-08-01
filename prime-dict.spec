@@ -1,5 +1,5 @@
 %define version	1.0.0
-%define release	%mkrel 6
+%define release	%mkrel 7
 
 Name:		prime-dict
 Summary:	Dictionaries for PRIME
