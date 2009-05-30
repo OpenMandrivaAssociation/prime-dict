@@ -4,13 +4,14 @@
 
 Name:		prime-dict
 Summary:	Dictionaries for PRIME
-Version:		%{version}
-Release:		%{release}
-URL:			http://sourceforge.jp/projects/prime/
-License:		GPL
+Version:	%{version}
+Release:	%{release}
+URL:		http://sourceforge.jp/projects/prime/
+License:	GPL
 Group:		System/Internationalization
-Source0:		%{name}-%{version}-%{date}ut.tar.bz2
+Source0:	%{name}-%{version}-%{date}ut.tar.bz2
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
+BuildRequires:	ruby
 
 %description
 Dictionaries for PRIME.
