@@ -1,5 +1,6 @@
 %define version	1.0.0
-%define release	%mkrel 7
+%define release	%mkrel 11.%{date}.1
+%define date	20090507
 
 Name:		prime-dict
 Summary:	Dictionaries for PRIME
@@ -8,21 +9,17 @@ Release:		%{release}
 URL:			http://sourceforge.jp/projects/prime/
 License:		GPL
 Group:		System/Internationalization
-Source0:		%{name}-%{version}.tar.bz2
+Source0:		%{name}-%{version}-%{date}ut.tar.bz2
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 Dictionaries for PRIME.
 
-
 %prep
-%setup -q
+%setup -q -n %{name}-%{version}-%{date}ut
 
 %build
-# fix build:
-%define __libtoolize /bin/true
-
-%configure2_5x
+%configure2_5x --with-rubydir=%{ruby_sitelibdir}
 %make
 
 %install
@@ -32,11 +29,8 @@ rm -rf $RPM_BUILD_ROOT
 %clean
 rm -rf $RPM_BUILD_ROOT
 
-
 %files
 %defattr(-,root,root)
 %doc ChangeLog COPYING 
-%{_libdir}/site_ruby*
+%{ruby_sitelibdir}/*
 %{_datadir}/prime/*
-
-
