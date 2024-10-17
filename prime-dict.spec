@@ -5,7 +5,7 @@ Name:		prime-dict
 Summary:	Dictionaries for PRIME
 Version:	1.0.0
 Release:	11.%{date}.2
-URL:		http://sourceforge.jp/projects/prime/
+URL:		https://sourceforge.jp/projects/prime/
 License:	GPL
 Group:		System/Internationalization
 Source0:	%{name}-%{version}-%{date}ut.tar.bz2
