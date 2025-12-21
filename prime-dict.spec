@@ -9,6 +9,11 @@ URL:		https://sourceforge.jp/projects/prime/
 License:	GPL
 Group:		System/Internationalization
 Source0:	%{name}-%{version}-%{date}ut.tar.bz2
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	ruby
 
 %description
